@@ -1,0 +1,70 @@
+/* Your styles go in here. */
+fieldset {
+  border: 0;
+}
+
+form {
+  margin: 0;
+  width: 600px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+legend {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+input, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 425px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+select {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  margin-left: .50em;
+}
+
+
+@media screen and (max-width: 600px) {
+  form {
+    width: auto;
+  }
+
+  label {
+    display: grid;
+    margin: 0;
+    text-align: left;
+    width: auto;
+  }
+
+  input, select, textarea {
+    width: 100%;
+  }
+}
